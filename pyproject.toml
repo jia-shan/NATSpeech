@@ -1,0 +1,39 @@
+[project]
+name = "natspeech"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "chardet>=5.2.0",
+    "einops>=0.8.1",
+    "g2p-en>=2.1.0",
+    "jieba>=0.42.1",
+    "jiwer>=3.1.0",
+    "librosa==0.9.1",
+    "matplotlib>=3.8.4",
+    "nltk>=3.9.1",
+    "numba==0.55.1",
+    "numpy==1.21.6",
+    "pandas>=1.4.1",
+    "praat-parselmouth==0.4.1",
+    "pycwt>=0.3.0a22",
+    "pyloudnorm>=0.1.1",
+    "pywavelets>=1.4.1",
+    "pyyaml==5.3.1",
+    "protobuf==3.20.1",
+    "resemblyzer>=0.1.4",
+    "scikit-image==0.19.2",
+    "scikit-learn==0.24.1",
+    "scipy==1.8.0",
+    "setuptools>=41.0.0",
+    "tensorboard==2.6.0",
+    "tensorboardx>=2.6.2.2",
+    "textgrid>=1.6.1",
+    "tqdm>=4.67.1",
+    "webrtcvad==2.0.10",
+    "montreal-forced-aligner>=3.2.2",
+    "cmake>=3.31.6",
+    "pybind11[global]>=2.13.6",
+    "pip>=25.0.1",
+]

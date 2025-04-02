@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "train fs2 ljspeech",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "tasks/run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--config",
+                "egs/datasets/audio/lj/fs2_orig.yaml",
+                "--exp",
+                "fs2_lj_debug",
+                "--reset"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0",
+                "PYTHONPATH": "."
+            }
+        },
+        {
+            "name": "infer fs2 ljspeech",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "tasks/run.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--config",
+                "egs/datasets/audio/lj/fs2_orig.yaml",
+                "--exp",
+                "lj_fs2",
+                "--reset",
+                "--infer",
+                "checkpoints/lj_fs2/test_generated_100000_"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0",
+                "PYTHONPATH": "."
+            }
+        }
+    ]
+}
